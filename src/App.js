@@ -1,13 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+import Home from "./routes/Home";
 import BoardList from "./routes/BoardList";
-import {Route, Routers} from "react-router-dom";
+import BoardDetail from "./routes/BoardDetail";
 
 function App() {
   return (
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/board" element={<BoardList/>}/> />
+        <Route path="/board" element={<BoardList/>}/>
+        <Route path="/board/:idx" element={<BoardDetail/>}/>
       </Routes>
   );
 }
