@@ -15,6 +15,8 @@ const BoardList = () => {
             data.push(tmp);
         }
 
+        //
+
         setBoardList(data); // 3) boardList 변수에 할당
 
     }
